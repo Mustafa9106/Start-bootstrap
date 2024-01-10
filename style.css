@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.header{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.left{
+    margin: 15px;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    margin-right: 10px;
+}
+.content{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color:rgba(60, 172, 60, 0.438);
+    /* color: white; */
+    letter-spacing: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 70vh;
+}
+.portfolio{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px 400px;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 50px 10px 50px 10px;
+    letter-spacing: 10px;
+}
+a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.grid-box{
+   display: grid;
+   grid-template-columns: repeat(3,400px);
+   padding: 0 100px;
+   gap: 20px;
+}
+
+.grid-box img{
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+img:hover{
+ transition: 0.3s ease-in-out;
+ box-shadow: 0 4px 8px rgba(0, 0, 0.2, 0.5);
+ opacity: 0.8;
+ cursor: pointer;
+}
+.about{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 40px 400px;
+    text-align: center;
+border-radius: 50px 10px 50px 10px;
+letter-spacing: 10px;
+display: flex;
+justify-content: center;
+}
+.about-content{
+    background-color:rgba(60, 172, 60, 0.438);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 50px;
+  line-height: 25px;
+  height: 60vh;
+}
+.about-content p{
+    width: 50%;
+    clear: both;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.btn button{
+    background-color:black;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.btn button:hover{
+    background-color: rgb(22, 22, 22);
+
+}
+.contact{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 40px 400px;
+    text-align: center;
+border-radius: 50px 10px 50px 10px;
+letter-spacing: 10px;
+}
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+gap: 30px;
+justify-content: center;
+align-items: center;
+
+}
+.contact-inputs input{
+    width: 30%;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.contact-inputs button{
+    background-color:black;
+    border: none;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 9px;
+}
+.contact-inputs button:hover{
+    background-color: rgb(22, 22, 22);
+}
+.footer{
+    display: flex;
+    background-color:rgba(60, 172, 60, 0.438);
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 40px;
+    align-items: center;
+    height: 30vh;
+
+}
+.footer .left{
+width: 30%;
+
+/* height: 40px; */
+}
+
+.footer .middle{
+width: 30%;
+}
+
+.footer .right{
+width: 30%;
+}
+.lower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(22, 119, 22, 0.815);
+font-weight: bold;
+padding: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .grid-box {
+      grid-template-columns: 1fr;
+      /* width: auto;
+      height: auto; */
+
+    }
+    .grid-box img {
+        height: auto; /* Adjust the height for smaller screens */
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .portfolio{
+      }
+    }
+    /* @media screen and (max-width:1200px) {
+        .grid-box {
+            grid-template-columns: 1fr 1fr;
+      
+          }
+    } */
